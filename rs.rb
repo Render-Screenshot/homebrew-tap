@@ -5,21 +5,21 @@
 class Rs < Formula
   desc "CLI for the RenderScreenshot API"
   homepage "https://renderscreenshot.com"
-  version "0.1.1"
+  version "0.1.2"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/Render-Screenshot/rs-cli/releases/download/v0.1.1/rs_darwin_amd64.tar.gz"
-      sha256 "2446cfd69e5cb37e93d09b1f72b585997400b19dae31d9d685b540b9df295155"
+      url "https://github.com/Render-Screenshot/rs-cli/releases/download/v0.1.2/rs_darwin_amd64.tar.gz"
+      sha256 "cb09c979510cf75d797f21c566e598acc61d58803194afa504705d94a23391b3"
 
       define_method(:install) do
         bin.install "rs"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/Render-Screenshot/rs-cli/releases/download/v0.1.1/rs_darwin_arm64.tar.gz"
-      sha256 "420fbbacc06402092bf1452aa8ae1529b70024dcfc2841e5ba1f35dfa5393cfc"
+      url "https://github.com/Render-Screenshot/rs-cli/releases/download/v0.1.2/rs_darwin_arm64.tar.gz"
+      sha256 "64d42df3e44b213b07e0de57388f1993ff2e10de79570236254d67deb5111886"
 
       define_method(:install) do
         bin.install "rs"
@@ -29,15 +29,15 @@ class Rs < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/Render-Screenshot/rs-cli/releases/download/v0.1.1/rs_linux_amd64.tar.gz"
-      sha256 "94a2aa8ebe66e687d7503694f9e351340fe9fab5b8c5e61149b73cede59627b1"
+      url "https://github.com/Render-Screenshot/rs-cli/releases/download/v0.1.2/rs_linux_amd64.tar.gz"
+      sha256 "529e4d94cb2156fcc1540013d954926805dbaab259759cfb15c1e713c6a9a05d"
       define_method(:install) do
         bin.install "rs"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/Render-Screenshot/rs-cli/releases/download/v0.1.1/rs_linux_arm64.tar.gz"
-      sha256 "b9f5581569cb3f440a6f41b7e3ca2087c38aa0be5848f0092562654fe0299dc5"
+      url "https://github.com/Render-Screenshot/rs-cli/releases/download/v0.1.2/rs_linux_arm64.tar.gz"
+      sha256 "5e7153f519ac86be79340be0544a6c99112e73697573a1cfb6297da6492fbcf7"
       define_method(:install) do
         bin.install "rs"
       end
